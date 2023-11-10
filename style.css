@@ -1,5 +1,5 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -7,62 +7,49 @@ body {
 }
 
 header {
-    background: linear-gradient(45deg, #6dd5ed, #2193b0);
+    background-color: #333;
     color: white;
     text-align: center;
-    padding: 2em 0;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    padding: 1em 0;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5em;
-    animation: fadeInDown 2s ease;
+    font-size: 2em;
 }
 
 nav ul {
     padding: 0;
     list-style: none;
-    background-color: #333;
     text-align: center;
     margin: 0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin-right: 20px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: white;
-    padding: 10px 15px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #6dd5ed;
-    color: #fff;
-    border-radius: 5px;
+    color: #6dd5ed;
 }
 
 main {
     padding: 20px;
-    animation: fadeIn 1.5s ease;
-    transition: transform 0.3s ease-in-out;
-}
-
-main:hover {
-    transform: scale(1.02);
 }
 
 section {
-    background: white;
+    background-color: white;
     padding: 15px;
     margin-bottom: 20px;
+    border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    border-radius: 10px;
 }
 
 footer {
@@ -70,22 +57,6 @@ footer {
     padding: 1em 0;
     background-color: #333;
     color: white;
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
 }
 
-/* Animation Keyframes */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+/* Additional styling and media queries can be added for responsiveness */
