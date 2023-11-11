@@ -70,5 +70,21 @@
     <footer>
         <p>&copy; 2023 Jiduan Wu</p>
     </footer>
+         <script>
+            document.addEventListener('click', function (e) {
+                // Create a span element to show the click effect
+                var span = document.createElement('span');
+                span.className = 'click-effect';
+                span.style.left = e.clientX + 'px';
+                span.style.top = e.clientY + 'px';
+                document.body.appendChild(span);
+        
+                // Remove the span after the animation is complete
+                setTimeout(function () {
+                    span.parentNode.removeChild(span);
+                }, 600); // Match the duration of the animation
+            });
+        </script>
+
 </body>
 </html>
